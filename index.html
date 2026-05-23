@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyển đổi đơn vị</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="converter-box">
+        <h1 class="title">Chuyển đổi đơn vị</h1>
+        
+        <div class="tabs-header">
+            <button class="tab-btn active" data-target="length">Độ dài</button>
+            <button class="tab-btn" data-target="weight">Khối lượng</button>
+            <button class="tab-btn" data-target="temperature">Nhiệt độ</button>
+        </div>
+
+        <div class="tabs-content">
+            <div id="length" class="tab-pane active">
+                <div class="converter-form"> 
+                    <div class="form-group">
+                        <label>Nhập giá trị muốn chuyển sang:</label>
+                        <input type="number" class="input-val full-width-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Chuyển từ:</label>
+                        <select class="select-from full-width-control">
+                            <option value="km">Kilômét (km)</option>
+                            <option value="mi">Dặm (mi)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Chuyển sang:</label>
+                        <select class="select-to full-width-control">
+                            <option value="km">Kilômét (km)</option>
+                            <option value="mi">Dặm (mi)</option>
+                        </select>
+                    </div>
+
+                    <button class="action-btn convert-btn">Chuyển đổi</button>
+                </div>
+
+                <div class="result-screen" style="display: none;">
+                    <div class="result-box">
+                        <p class="text-sm">Kết quả:</p>
+                        <h2 class="final-result">Lỗi thực thi</h2>
+                    </div>
+
+                    <button class="action-btn reset-btn">Trở về</button>
+                </div>
+            </div>
+
+            <div id="weight" class="tab-pane">
+                <div class="converter-form"> 
+                    <div class="form-group">
+                        <label>Nhập giá trị muốn chuyển sang:</label>
+                        <input type="number" class="input-val full-width-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Chuyển từ:</label>
+                        <select class="select-from full-width-control">
+                            <option value="kg">Kilôgam (kg)</option>
+                            <option value="lb">Pound (lb)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Chuyển sang:</label>
+                        <select class="select-to full-width-control">
+                            <option value="kg">Kilôgam (kg)</option>
+                            <option value="lb">Pound (lb)</option>
+                        </select>
+                    </div>
+
+                    <button class="action-btn convert-btn">Chuyển đổi</button>
+                </div>
+
+                <div class="result-screen" style="display: none;">
+                    <div class="result-box">
+                        <p class="text-sm">Kết quả:</p>
+                        <h2 class="final-result">Lỗi thực thi</h2>
+                    </div>
+
+                    <button class="action-btn reset-btn">Trở về</button>
+                </div>
+            </div>
+
+            <div id="temperature" class="tab-pane">
+                <div class="converter-form"> 
+                    <div class="form-group">
+                        <label>Nhập giá trị muốn chuyển sang:</label>
+                        <input type="number" class="input-val full-width-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Chuyển từ:</label>
+                        <select class="select-from full-width-control">
+                            <option value="°C">Độ C (°C)</option>
+                            <option value="°F">Độ F (°F)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Chuyển sang:</label>
+                        <select class="select-to full-width-control">
+                            <option value="°C">Độ C (°C)</option>
+                            <option value="°F">Độ F (°F)</option>
+                        </select>
+                    </div>
+
+                    <button class="action-btn convert-btn">Chuyển đổi</button>
+                </div>
+
+                <div class="result-screen" style="display: none;">
+                    <div class="result-box">
+                        <p class="text-sm">Kết quả:</p>
+                        <h2 class="final-result">Lỗi thực thi</h2>
+                    </div>
+
+                    <button class="action-btn reset-btn">Trở về</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/script.js"></script>
+</body>
+</html>
